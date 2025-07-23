@@ -15,3 +15,19 @@ aside{
 figure img {
     width: 100px;
 }
+.logo {
+  font-size: 2.5rem;
+  font-family: 'Segoe UI Emoji', 'Noto Color Emoji', 'Apple Color Emoji', sans-serif;
+  margin-right: auto;
+}
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+nav ul li a {
+  margin-left: 1-rem;
+  color: #f00e12;
+  padding: 20px;
+}
