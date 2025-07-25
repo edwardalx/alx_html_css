@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+position: relative;
+width: 1440px;
+height: 3718px;
+background: #FFFFFF;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between; /* logo left, menu right */
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.menu {
+  display: flex;
+  gap: 30px; /* spacing between menu items */
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.section-1{
+background-image: url('/assets/background.png');
+position: absolute;
+width: 1440px;
+height: 1093px;
+left: 0px;
+top: 0px;
+background-size: cover;
+background-position: center;
+z-index: -1;
+}
+.get-schooled{
+position: absolute;
+height: 151px;
+left: 26.18%;
+right: 26.32%;
+top: calc(50% - 151px/2 - 251px);
+
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 120px;
+line-height: 151px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+}
+.section-1 span{
+position: absolute;
+height: 20px;
+left: 41.18%;
+right: 55.21%;
+top: calc(50% - 20px/2 - 175.5px);
+
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+
+color: #FFFFFF;
+}
+.section-1 .button{
+position: absolute;
+left: 44.38%;
+right: 44.38%;
+top: 38.33%;
+bottom: 57.64%;
+
+filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
+
+}
+.section-1 div h2{
+    /* Learn from the pros */
+position: absolute;
+height: 40px;
+left: 41.94%;
+right: 39.93%;
+top: calc(50% - 40px/2 + 104.5px);
+
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 40px;
+text-align: center;
+
+color: #C271FF;
+}
+.pros {
+  display: flex; /* Horizontal layout */
+  justify-content: space-between; /* or center/space-around */
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1009px;
+  margin: 758px auto 0;
+  padding: 1rem;
+  gap: 2rem; /* spacing between items */
+}
+
+.pros div {
+  text-align: center;
+  color: white;
+}
+
+.pros div img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.pros div h3 {
+  font-family: 'Source Sans Pro';
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 1rem;
+}
+
+.pros div p {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
