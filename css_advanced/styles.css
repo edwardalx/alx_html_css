@@ -3,18 +3,33 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-position: relative;
-width: 1440px;
-height: 3718px;
-background: #FFFFFF;
+
+html, body {
+  height: 100%;
+  background: #FFFFFF;
+  font-family: 'Source Sans Pro', sans-serif;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header {
+  color: white;
+  z-index: 1000;
+  position: relative;
+  width: 100%;
+}
+
 .navbar {
   display: flex;
-  justify-content: space-between; /* logo left, menu right */
+  justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
 }
+
 
 .logo img {
   height: 40px;
@@ -35,59 +50,67 @@ background: #FFFFFF;
   font-weight: 500;
 }
 
-.section-1{
-background-image: url('/assets/background.png');
-position: absolute;
-width: 1440px;
-height: 1093px;
-left: 0px;
-top: 0px;
-background-size: cover;
-background-position: center;
-z-index: -1;
+.section-1 {
+  background-image: url('/assets/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* width: 100%;
+  min-height: 100vh; */
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
-.get-schooled{
-position: absolute;
-height: 151px;
-left: 26.18%;
-right: 26.32%;
-top: calc(50% - 151px/2 - 251px);
 
-font-family: 'Source Sans Pro';
-font-style: normal;
-font-weight: 700;
-font-size: 120px;
-line-height: 151px;
-/* identical to box height */
-text-align: center;
 
-color: #FFFFFF;
+.slogans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 20px;
 }
-.section-1 span{
-position: absolute;
-height: 20px;
-left: 41.18%;
-right: 55.21%;
-top: calc(50% - 20px/2 - 175.5px);
-
-font-family: 'Source Sans Pro';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 20px;
-text-align: center;
-
-color: #FFFFFF;
+.get-schooled {
+  font-size: 80px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: white;
 }
-.section-1 .button{
-position: absolute;
-left: 44.38%;
-right: 44.38%;
-top: 38.33%;
-bottom: 57.64%;
-
-filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
-
+.section-1 span {
+  display: flex;
+  flex-direction: row; /* Explicitly set horizontal direction */
+  justify-content: center;
+  gap: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 30px;  
+  color: #FFFFFF;
+}
+.section-1 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #C271FF;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+}
+.before-pros {
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 20px;
 }
 .section-1 div h2{
     /* Learn from the pros */
@@ -145,4 +168,228 @@ color: #C271FF;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
+section:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #C271FF;
+  padding: 60px 20px;
+  color: white;
+  flex: 1;
+}
+
+section:nth-of-type(2) img {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  margin-right: 40px;
+}
+
+section:nth-of-type(2) blockquote {
+  font-size: 22px;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+section:nth-of-type(2) h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+section:nth-of-type(2) p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+section:nth-of-type(3) {
+  background-color: #fff;
+  padding: 80px 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section:nth-of-type(3) h2 {
+  color: #071629;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+section:nth-of-type(3) > div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section:nth-of-type(3) > div > div {
+  background: #fff;
+  max-width: 250px;
+  text-align: left;
+}
+
+.tutorial img {
+  width: 80%;
+}
+
+section:nth-of-type(3) h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+section:nth-of-type(3) p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+section:nth-of-type(3) h4 {
+  font-size: 14px;
+  margin: 0 0 5px;
+  color: #C271FF;
+}
+.stars {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 5px;
+}
+.philip {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+  margin-top: 10px;
+} 
+.philip img {
+  width: 10%;
+}
+
+.stars i.fa-solid {
+  color: #C271FF;
+  margin-right: 2px;
+  display: flex;
+}
+.stars div i.fa-regular {
+  color: #ccc; /* light gray */
+  margin-right: 2px;
+}
+
+section:nth-of-type(4) {
+  background-color: #071629;
+  color: white;
+  padding: 80px 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section:nth-of-type(4) h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+section:nth-of-type(4) > div {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+section:nth-of-type(4) img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+section:nth-of-type(4) h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+section:nth-of-type(4) p {
+  font-size: 14px;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+section:nth-of-type(4) button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #C271FF;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+section:nth-of-type(5) {
+  background-color: #fff;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+section:nth-of-type(5) h2 {
+  font-size: 32px;
+  margin-bottom: 60px;
+  color: #071629;
+}
+
+section:nth-of-type(5) > div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section:nth-of-type(5) h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+section:nth-of-type(5) div > div {
+  max-width: 500px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.6;
+}
+footer {
+  background-color: #071629;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+footer img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+footer i {
+  margin: 0 10px;
+  font-size: 20px;
+  color: white;
+}
+
+footer p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ccc;
 }
