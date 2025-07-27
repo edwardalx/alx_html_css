@@ -13,11 +13,11 @@ html, body {
 main {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-height: 100%;
 }
 
 header {
-  color: white;
+  color: black;
   z-index: 1000;
   position: relative;
   width: 100%;
@@ -62,7 +62,6 @@ header {
   position: relative;
   display: flex;
   flex-direction: column;
-  flex: 1;
 }
 
 
@@ -110,24 +109,30 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 100px 20px;
+  padding: 20px 20px;
 }
-.section-1 div h2{
-    /* Learn from the pros */
-position: absolute;
-height: 40px;
-left: 41.94%;
-right: 39.93%;
-top: calc(50% - 40px/2 + 104.5px);
+.before-pros h2 {
+  margin-bottom: 0px; /* Removes bottom margin from h2 */
+}
 
-font-family: 'Source Sans Pro';
-font-style: normal;
-font-weight: 700;
-font-size: 32px;
-line-height: 40px;
-text-align: center;
+.before-pros .pros {
+  margin-top: 50px; /* Removes top margin from div.pros */
+}
+.before-pros h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  white-space: nowrap; /* Optional: prevents line break */
+}
 
-color: #C271FF;
+.before-pros h2 .learn {
+  all: unset;
+  color: #C271FF;
+  display: inline; /* Ensure inline behavior */
 }
 .pros {
   display: flex; /* Horizontal layout */
@@ -214,10 +219,16 @@ section:nth-of-type(3) {
 }
 
 section:nth-of-type(3) h2 {
-  color: #071629;
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 40px;
+ font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 300;
+font-size: 32px;
+line-height: 40px;
+text-align: center;
+color: #071629;
+}
+.highlight {
+  color: #C271FF;
 }
 
 section:nth-of-type(3) > div {
@@ -343,53 +354,91 @@ section:nth-of-type(5) {
 }
 
 section:nth-of-type(5) h2 {
-  font-size: 32px;
-  margin-bottom: 60px;
+  font-size: 42px;
+  font-weight: 700;
   color: #071629;
+  margin-bottom: 60px;
 }
 
 section:nth-of-type(5) > div {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 3rem;
+  justify-content: center;
+  gap: 60px;
   max-width: 1200px;
   margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+section:nth-of-type(5) > div > div {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
 }
 
 section:nth-of-type(5) h3 {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
+  color: #071629;
   text-align: left;
 }
 
 section:nth-of-type(5) div > div {
-  max-width: 500px;
-  text-align: left;
   font-size: 14px;
   line-height: 1.6;
+  text-align: left;
+  color: #071629;
 }
+
 footer {
   background-color: #071629;
   color: white;
-  padding: 40px;
+  padding: 60px 40px 30px;
   text-align: center;
 }
 
+
+
+footer section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+footer .all-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: auto;
+  width: 100%;
+  gap: 20px;
+}
 footer img {
-  width: 100px;
-  margin-bottom: 20px;
+  width: 150px;
 }
 
 footer i {
+  font-size: 24px;
   margin: 0 10px;
-  font-size: 20px;
-  color: white;
 }
 
 footer p {
   margin-top: 20px;
+}
+
+
+footer i {
+  font-size: 20px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+footer i:hover {
+  color: #C271FF;
+}
+
+footer p {
   font-size: 14px;
   color: #ccc;
+  margin-top: 10px;
 }
