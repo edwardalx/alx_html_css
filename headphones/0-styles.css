@@ -1,0 +1,31 @@
+:root {
+  --main-color: #3498db;
+  --font-size: 16px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    /* background-color: red; */
+    width: 70%;
+    margin: auto;
+    padding:  0 10px;
+
+}
+body{
+    background-image: url("/headphones/images/headphones_hero_1.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+.links li{
+    padding: 20px;
+    color: white;
+}
