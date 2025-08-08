@@ -1,0 +1,369 @@
+:root {
+  --main-color: #3498db;
+  --font-size: 16px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    /* background-color: red; */
+    width: 80%;
+    margin: auto;
+    padding:  0 10px;
+
+}
+.main-container{
+   
+    width: 100vw;
+    min-height: 100vh;
+    font-family: Source Sans Pro;
+    overflow-y:scroll;
+    margin: 0; 
+   /*  background-attachment: fixed; Optional: keeps bg fixed while scrolling */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+}
+
+.container{
+display: flex;
+flex-direction: column;
+background-image: url("/headphones/images/headphones_hero_1.jpg");
+background-size: cover;
+background-position: center;
+flex: 1;
+} 
+
+a:hover,a:active{
+    color: #FF6565;
+}
+button:hover, button:active{
+    opacity: 0.9
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+.links li{
+    padding: 20px;
+    color: #FFFFFF;
+    font-family: Source Sans Pro;
+    font-weight: bold;
+}
+button{
+    background-color: #FF6565;
+    opacity: 100%;
+    border-radius: 22px;
+    height: 44px;
+    width: 162px;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+.hero-piece{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+.lorem-3{
+    display: flex;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.lorem-3 p {
+    line-height: 1.5; /* Optional: Adjust line spacing */
+    margin: 0 auto; /*Optional: Ensures the paragraph doesn't stretch full width*/
+    max-width: 100%; /* Optional: Prevents text from stretching too wide */
+    color: #FFFFFF;
+}
+.lorem-1{
+    margin-top: 10%;
+    margin-bottom: 0;
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFFFFF;
+    height: 6vh;
+
+}
+.lorem-2{
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.our-results{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: space-between;
+    background-color: #FFFFFF ;
+    width: 100%;
+    padding: 40px 0;
+    flex: 1;
+}
+.our-results-1{
+    display: flex;
+    margin-top: 12% ;
+    margin-bottom: 5%;
+    line-height: 1.5;
+}
+.our-results-2 {
+    margin-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap; /* Allows boxes to wrap on small screens */
+    justify-content: center; /* Centers boxes horizontally */
+    gap: 30px; /* Adds space between boxes */
+    width: 100%;
+    max-width: 1000px; /* Prevents boxes from getting too wide */
+    padding: 0 20px; /* Padding for mobile */
+}
+
+.box {
+    flex: 1; /* Allows boxes to grow equally */
+    min-width: 200px; /* Minimum width before wrapping */
+    max-width: 250px; /* Maximum width of each box */
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.box img {
+    width: 67px; /* Control image size */
+    height: 76px;
+    margin-bottom: 15px;
+}
+.sound{
+    width: 4.2px;
+    height: 54px;
+}
+.our-results-3 {
+    background-image: url("/headphones/images/headphones_hero_2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 50vh; /* Half page height */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 0;
+    color: white;
+}
+
+.our-results-3-A {
+    width: 637px;
+    height: 104px;
+    padding: 0 5%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.our-results-3-A p {
+    line-height: 1.6;
+    font-size: 18px;
+    text-align: left;
+    text-align: center;
+}
+
+.our-results-3-B {
+  margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap; /* Allows boxes to wrap on small screens */
+    justify-content: center; /* Centers boxes horizontally */
+    gap: 50px; /* Adds space between boxes */
+    width: 100%;
+    max-width: 1000px; /* Prevents boxes from getting too wide */
+    padding: 0 20px; 
+}
+
+.pentagon {
+    text-align: center;
+    position: relative;
+    width: 190px;
+    height: 190px;
+}
+
+/* .pentagon img {
+    width: 190px;
+    height: 190px;
+} */
+/* Remove img styles since we're not using images anymore */
+.pentagon {
+    text-align: center;
+    position: relative;
+    width: 190px;
+    height: 190px;
+}
+
+/* Pentagon shape */
+.shape {
+    width: 100%;
+    height: 100%;
+    background-color: #ff6b6b; /* pink/red */
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* +2% text */
+.shape h3 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Subtext */
+.shape p {
+    font-size: 14px;
+    margin: 5px 0 0 0;
+}
+
+
+.pentagon h3,.pentagon p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 46px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.pentagon p {
+    padding-top: 80px;
+    font-size: 14px;
+}
+/* Contact section */
+.contact {
+    width: 100%;
+    height: 50vh; /* half the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* match screenshot */
+}
+
+/* Form image container */
+.contact .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* space between images */
+    margin-bottom: 30px;
+}
+
+.contact .form img {
+    width: 250px; /* adjust to match the screenshot’s input line size */
+    height: auto;
+}
+footer {
+    background-color: #071629; /* dark navy from screenshot */
+    color: white;
+    padding: 20px 40px;
+}
+
+.footer-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-1 img {
+    height: 40px; /* adjust based on your logo */
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.social-media a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-media a:hover {
+    background-color: #ff6b6b; /* hover color */
+    color: white;
+}
+
+.footer-2 {
+    text-align: center;
+    font-size: 12px;
+    color: #8a8a8a;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:480px) {
+    body{
+        font-size: 14px;
+    }
+    .links{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    list-style: none;
+}
+.links li{
+    padding: 15px;
+    color: #FFFFFF;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.our-results-3-B {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding-right: 5%;
+}
+.contact {
+        height: auto;
+        padding: 20px;
+    }
+
+    .contact .form {
+        display: grid;
+        grid-template-columns: 1fr; /* single column grid */
+        gap: 15px;
+        width: 100%;
+    }
+
+    .contact .form img {
+        width: 100%; /* full width on mobile */
+        max-width: none;
+    }
+
+    .contact .button {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
