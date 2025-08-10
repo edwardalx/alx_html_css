@@ -1,0 +1,511 @@
+:root {
+  --main-color: #3498db;
+  --font-size: 16px;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding: 0 10px;
+}
+
+.main-container {
+    width: 100vw;
+    min-height: 100vh;
+    font-family: Source Sans Pro;
+    overflow-y: scroll;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-image: url("/headphones/images/headphones_hero_1.jpg");
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+}
+
+a:hover,
+a:active {
+    color: #FF6565;
+}
+
+button:hover,
+button:active {
+    opacity: 0.9;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.links li {
+    padding: 20px;
+    color: #FFFFFF;
+    font-family: Source Sans Pro;
+    font-weight: bold;
+    cursor: pointer;
+}
+button{
+    background-color: #FF6565;
+    opacity: 100%;
+    border-radius: 22px;
+    height: 44px;
+    width: 162px;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+.hero-piece{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+/* .lorem-3{
+    display: flex;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.lorem-3 p {
+    line-height: 1.5; 
+    margin: 0 auto; 
+    max-width: 100%; 
+    color: #FFFFFF;
+    text-align: center;
+} */
+.lorem-3 {
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center;     /* center vertically (within parent height) */
+    text-align: center;      /* ensures the text lines center */
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-top: 5%;
+}
+
+.lorem-3 p {
+    max-width: 800px;        /* keeps the text in a nice readable width */
+    margin: 0 auto;          /* center block in flex item */
+    line-height: 1.5;
+}
+
+.lorem-1{
+    margin-top: 10%;
+    margin-bottom: 0;
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFFFFF;
+    height: 6vh;
+
+}
+.lorem-2{
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.our-results{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: space-between;
+    background-color: #FFFFFF ;
+    width: 100%;
+    padding: 40px 0;
+    flex: 1;
+}
+.our-results-1{
+    display: flex;
+    margin-top: 12% ;
+    margin-bottom: 5%;
+    line-height: 1.5;
+    text-align: center;
+}
+.our-results-2 {
+    margin-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap; /* Allows boxes to wrap on small screens */
+    justify-content: center; /* Centers boxes horizontally */
+    gap: 30px; /* Adds space between boxes */
+    width: 100%;
+    max-width: 1000px; /* Prevents boxes from getting too wide */
+    padding: 0 20px; /* Padding for mobile */
+}
+
+.box {
+    flex: 1; /* Allows boxes to grow equally */
+    width: 207px;
+    height: 180px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.box img {
+    width: 67px; /* Control image size */
+    height: 76px;
+    margin-bottom: 15px;
+}
+.box p{
+    font-size: 14px;
+    line-height: 26px;
+}
+.sound{
+    width: 4.2px;
+    height: 54px;
+}
+.our-results-3 {
+    background-image: url("/headphones/images/headphones_hero_2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 50vh; /* Half page height */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 0;
+    color: white;
+}
+
+.our-results-3-A {
+    width: 637px;
+    height: 104px;
+    padding: 0 5%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.our-results-3-A p {
+    line-height: 1.6;
+    font-size: 18px;
+    text-align: left;
+    text-align: center;
+}
+
+.our-results-3-B {
+  margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap; /* Allows boxes to wrap on small screens */
+    justify-content: center; /* Centers boxes horizontally */
+    gap: 50px; /* Adds space between boxes */
+    width: 100%;
+    max-width: 1000px; /* Prevents boxes from getting too wide */
+    padding: 0 20px; 
+}
+
+.pentagon {
+    text-align: center;
+    position: relative;
+    width: 190px;
+    height: 190px;
+}
+
+/* .pentagon img {
+    width: 190px;
+    height: 190px;
+} */
+/* Remove img styles since we're not using images anymore */
+.pentagon {
+    text-align: center;
+    position: relative;
+    width: 190px;
+    height: 190px;
+}
+
+/* Pentagon shape */
+.shape {
+    width: 100%;
+    height: 100%;
+    background-color: #ff6b6b; /* pink/red */
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* +2% text */
+.shape h3 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Subtext */
+.shape p {
+    font-size: 14px;
+    margin: 5px 0 0 0;
+}
+
+
+.pentagon h3,.pentagon p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 46px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.pentagon p {
+    padding-top: 80px;
+    font-size: 14px;
+}
+/* Contact section */
+.contact {
+    width: 100%;
+    height: 50vh; /* half the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* match screenshot */
+}
+
+/* Form image container */
+.contact .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* space between images */
+    margin-bottom: 30px;
+}
+
+.contact .form img {
+    width: 250px; /* adjust to match the screenshot’s input line size */
+    height: auto;
+}
+footer {
+    background-color: #071629; /* dark navy from screenshot */
+    color: white;
+    padding: 20px 40px;
+}
+
+.footer-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-1 img {
+    height: 40px; /* adjust based on your logo */
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.social-media a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-media a:hover {
+    background-color: #ff6b6b; /* hover color */
+    color: white;
+}
+
+.footer-2 {
+    text-align: center;
+    font-size: 12px;
+    color: #8a8a8a;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:480px) {
+    body{
+        font-size: 14px;
+    }
+    .links{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    list-style: none;
+}
+.links li{
+    padding: 15px;
+    color: #FFFFFF;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.our-results-3-B {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding-right: 5%;
+}
+.contact {
+        height: auto;
+        padding: 20px;
+    }
+
+    .contact .form {
+        display: grid;
+        grid-template-columns: 1fr; /* single column grid */
+        gap: 15px;
+        width: 100%;
+    }
+
+    .contact .form img {
+        width: 100%; /* full width on mobile */
+        max-width: none;
+    }
+
+    .contact .button {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+/* =========================
+   FUN ANIMATIONS
+   ========================= */
+
+/* "What we do" hero-piece cards - floating effect */
+.hero-piece .item {
+    animation: floatUpDown 4s ease-in-out infinite;
+    transition: transform 0.3s ease;
+}
+.hero-piece .item:hover {
+    transform: scale(1.08) rotate(1deg);
+}
+
+/* "Our results" pentagons - pop + spin on hover */
+.our-results-3-B .pentagon {
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+.our-results-3-B .pentagon:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 8px 20px rgba(255, 94, 94, 0.4);
+}
+
+/* Floating animation keyframes */
+@keyframes floatUpDown {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+/* Bounce-in when page loads */
+@keyframes bounceIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    50% { transform: scale(1.05); opacity: 1; }
+    70% { transform: scale(0.95); }
+    100% { transform: scale(1); }
+}
+
+/* Apply bounce-in only once on load */
+.hero-piece .item,
+.our-results-3-B .pentagon {
+    animation: bounceIn 0.8s ease forwards;
+}
+.hero-piece .item:nth-child(1) { animation-delay: 0.1s; }
+.hero-piece .item:nth-child(2) { animation-delay: 0.3s; }
+.hero-piece .item:nth-child(3) { animation-delay: 0.5s; }
+.hero-piece .item:nth-child(4) { animation-delay: 0.7s; }
+
+.our-results-3-B .pentagon:nth-child(1) { animation-delay: 0.2s; }
+.our-results-3-B .pentagon:nth-child(2) { animation-delay: 0.4s; }
+.our-results-3-B .pentagon:nth-child(3) { animation-delay: 0.6s; }
+.our-results-3-B .pentagon:nth-child(4) { animation-delay: 0.8s; }
+
+
+/* ===== HAMBURGER MENU ===== */
+.hamburger {
+    display: none; /* hidden on desktop */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 480px) {
+    .links {
+        display: none;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.95);
+        position: absolute;
+        top: 60px; /* below header */
+        right: 0;
+        width: 100%;
+        text-align: center;
+        animation: slideDown 0.3s ease forwards;
+    }
+
+    .links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* Smooth dropdown animation */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hamburger animation when active */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(7px);
+}
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-7px);
+}
